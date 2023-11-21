@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Karaoke</title>
+    <script src="seu_script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        .header {
+            height: 60px;
+            background-color: #536DFE;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu-btn {
+            cursor: pointer;
+
+        }
+
+        .btn-line {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            color: black;
+            position: fixed;
+            top: 60px;
+            left: 0px;
+            width: 200px;
+            height: 100%;
+            padding: 20px;
+            transition: left 0.3s ease-in-out;
+            border-right: 1px solid #0000001F;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .menu-corpo {
+            display: flex;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+
+        .bloco-grupo,
+        .bloc-mu,
+        .videoyuo {
+            margin-left: 350px;
+            margin-top: 20px;
+            width: 1000px;
+        }
+
+        .add-grupo button,
+        .info-2 button {
+            background: #1976D2;
+            color: white;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .add-grupo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1000px;
+        }
+
+        .grupos {
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grupo1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bloco1 {
+            width: 350px;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .info h4 {
+            margin-bottom: -10px;
+        }
+
+        .imgopgrupo {
+            margin-right: 10px;
+        }
+
+        .btnexcluir {
+            display: flex;
+        }
+
+        .btnexcluir p {
+            margin-right: 15px;
+        }
+
+        .bloco1 {
+            width: 350px;
+            border: 1px solid #0000002b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 20px 10px 0px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-right: 20px;
+        }
+
+        .acessar {
+            color: #1976D2;
+            font-weight: bold;
+        }
+
+        .excluir {
+            color: #D32F2F;
+            font-weight: bold;
+        }
+
+        .informacoes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .info-2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .bloc-mu-interno {
+            padding: 20px;
+            border: 1px solid #8080802b;
+            border-radius: 10px;
+        }
+
+        .bloco1-mu {
+            display: flex;
+            border-bottom: 1px solid #00000014;
+        }
+
+        .bloco2-mu {
+
+            border-bottom: 1px solid #00000014;
+        }
+
+        .espe {
+            border-bottom: 0px solid #00000014 !important;
+
+        }
+
+        .bloco1-mu p {
+            margin-right: 242px;
+        }
+
+        .card1-1 {
+            display: flex;
+        }
+
+        .card1-1 p,
+        .card1-1 img {
+            margin-right: 30px;
+        }
+
+        .card1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .menu {
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <div class="menu">
+                <h2>KARAOKE TUBE</h2>
+                <div class="menu-corpo">
+                    <img src="engrenagem.svg" alt="">
+                    <a href="home.html">Grupo</a>
+                </div>
+                <!-- Conteúdo do menu vai aqui -->
+            </div>
+        </div>
+    </header>
+    <section class="videoyuo">
+        <a href="grupo.html">
+            <h4> Voltar </h4>
+
+            <iframe id="ytplayer" type="text/html" width="720" height="405"
+                src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen>
+    </section>
+
+</body>
+
+</html>

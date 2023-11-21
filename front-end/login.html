@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - KARAOKE TUBE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b397e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .login-container label,
+        .login-container input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            background-color: #1976D2;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+
+
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0.46000000834465027px;
+
+        }
+
+        h1 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0.15000000596046448px;
+            text-align: left;
+
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        .login-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 408px;
+        }
+
+        input {
+            padding: 0px, 12px, 0px, 12px;
+            border-radius: 4px;
+            border: 1px solid #0000003B;
+            ;
+        }
+
+        .login-criar {
+            display: flex;
+            justify-content: flex-start;
+            width: 408px;
+        }
+
+        .login-criar p {
+            margin-right: 10px;
+            color: #1976D2;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-title">
+            <h1>KARAOKE TUBE</h1>
+            <h2>ENTRAR</h2>
+        </div>
+        <div class="login-input">
+            <form action="home.html" method="get">
+                <input type="text" id="username" name="username" required placeholder="Email">
+                <input type="password" id="password" name="password" required placeholder="Senha">
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div class="login-criar">
+            <p>Criar conta</p>
+            <p>Esqueceu a senha?</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
